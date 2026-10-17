@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="primaryGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <linearGradient id="ringGradMask" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.3" />
+    </linearGradient>
+  </defs>
+
+  <!-- Full-bleed background with no rounded corners for maskable icon -->
+  <rect width="512" height="512" fill="url(#bgGradMask)" />
+
+  <!-- Center all graphics comfortably within 80% safe zone (radius < 204px) -->
+  <g transform="translate(256, 256) scale(0.85)">
+    <!-- Outer Orbit / Focus Ring -->
+    <circle cx="0" cy="0" r="160" fill="none" stroke="url(#ringGradMask)" stroke-width="6" stroke-dasharray="24 16" />
+
+    <!-- Central Hexagonal / Shield facet -->
+    <path d="M-50 -90 L50 -90 L90 0 L50 90 L-50 90 L-90 0 Z" 
+          fill="none" 
+          stroke="url(#primaryGradMask)" 
+          stroke-width="12" 
+          stroke-linejoin="round" />
+
+    <!-- Sharp Stylized K / Timeline Needle Mark -->
+    <path d="M-36 -55 L-36 55" stroke="#ffffff" stroke-width="14" stroke-linecap="round" />
+    <path d="M-36 0 L36 -55" stroke="url(#primaryGradMask)" stroke-width="14" stroke-linecap="round" />
+    <path d="M0 -18 L38 55" stroke="#38bdf8" stroke-width="14" stroke-linecap="round" />
+    
+    <circle cx="38" cy="55" r="7" fill="#38bdf8" />
+    <circle cx="-36" cy="-55" r="7" fill="#ffffff" />
+  </g>
+</svg>

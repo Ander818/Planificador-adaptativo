@@ -1,0 +1,6 @@
+{
+  "name": "Khoros - Planificador Diario Inteligente",
+  "description": "Planificador diario minimalista con cifrado de extremo a extremo, reorganización automática ante imprevistos, sincronización con calendarios y reportes semanales en PDF.",
+  "requestFramePermissions": ["camera_microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
